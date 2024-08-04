@@ -1,0 +1,157 @@
+
+body{
+    margin: 10px;
+    padding: 0px;
+}
+
+/* Container for the calculator */
+.Calci_box {
+    background-color: #5A6378; /* Dark slate blue */
+    padding: 20px;
+    margin: 0 auto;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+}
+
+/* Rounded edges for the outer container */
+.roundedge {
+    border-radius: 20px;
+}
+
+/* Padding for the parent container */
+.parentContainer {
+    padding: 50px 0;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Styling for the calculator inner box */
+.chwidth {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+/* Calculator background color */
+.calci {
+    background-color: #7A869E; /* Lighter slate blue */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Output screen style */
+.outputScreen {
+    height: 100px;
+    background-color: #FFF1E6; /* Light peach */
+    width: 88%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    /* Adding inner shadow for depth */
+}
+
+/* Style for calculator buttons */
+.btStyle {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: none;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #4B5D67; /* Slate grey */
+    color: #FFFFFF; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.btStyle:hover {
+    background-color: #3B4B57; /* Darker slate grey */
+}
+
+.copy{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.copyy{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* making it responsive */
+@media only screen and (max-width: 768px) {
+    .Calci_box {
+        width: 90%;
+        max-width: 400px;
+    }
+    /* Base styles for all screen sizes */
+    .Calci_box {
+        background-color: #5A6378; /* Dark slate blue */
+        padding: 20px;
+        margin: 0 auto;
+        width: 90%; /* Adjusted width for better mobile responsiveness */
+        max-width: 400px; /* Added max-width for better control on larger screens */
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .roundedge {
+        border-radius: 20px;
+    }
+
+    .parentContainer {
+        padding: 20px 0; /* Adjusted padding for better mobile spacing */
+        text-align: center;
+    }
+
+    .chwidth {
+        display: inline-block;
+        width: 75%; /* Ensuring div takes full width on mobile */
+    }
+
+    .calci {
+        background-color: #7A869E; /* Lighter slate blue */
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .outputScreen {
+        height: 80px; /* Reduced height for better mobile display */
+        background-color: #FFF1E6; /* Light peach */
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 15px; /* Adjusted padding for better mobile spacing */
+        font-size: 1.5rem; /* Reduced font size for better readability on mobile */
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        text-align: right;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btStyle {
+        border-radius: 50%;
+        height: 30px; /* Reduced height for better mobile display */
+        width: 30px; /* Reduced width for better mobile display */
+        border: none;
+        margin: 6px; /* Reduced margin for better mobile spacing */
+        font-weight: bold;
+        font-size: 1rem; /* Reduced font size for better mobile display */
+        background-color: #4B5D67; /* Slate grey */
+        color: #FFFFFF; /* White text color */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btStyle:hover {
+        background-color: #3B4B57; /* Darker slate grey */
+    }
+}
